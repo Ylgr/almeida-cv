@@ -26,6 +26,12 @@
                         <li class="experience__bullet">{{ . }}</li>
                         {{ end }}
                     </ul>
+                    <h3> Project:</h3> <p>{{ .Project | safeHTML}}</p>
+                    <ul>
+                        {{ range .Projects }}
+                        <li class="experience__bullet">{{ . }}</li>
+                        {{ end }}
+                    </ul>
                     <div class="experience__badges">
                         <ul>
                             {{ range .Badges }}
